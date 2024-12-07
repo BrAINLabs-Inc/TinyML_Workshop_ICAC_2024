@@ -113,7 +113,7 @@ public class CameraActivity extends AppCompatActivity {
                             float[] outputProbabilities = outputFeature0.getFloatArray();
                             int predictedIndex = (int) outputProbabilities[0];
                             Log.d("out", String.valueOf(outputProbabilities[0]));
-                            runOnUiThread(() -> resultText.setText("Prediction Index: " + predictedIndex));
+                            runOnUiThread(() -> resultText.setText("Prediction Index: " +  outputProbabilities[0]));
 //
 
 
